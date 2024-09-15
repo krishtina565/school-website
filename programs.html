@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs - Saturn Boarding School</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c3e50;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #1abc9c;
+        }
+
+        main {
+            padding-top: 100px; /* Offset for fixed header */
+        }
+
+        #programs {
+            text-align: center;
+            padding: 60px 20px;
+            background-image: url('images/programs-background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+
+        #programs h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #506A88; /* Golden color for heading */
+        }
+
+        #programs p {
+            font-size: 22px;
+            margin-bottom: 40px;
+            color: #6C7D8F; /* Light color for text */
+        }
+
+        .programs-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .program {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .program img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #1abc9c; /* Accent color */
+        }
+
+        .program h2 {
+            font-size: 24px;
+            margin: 20px 0 10px;
+            color: #6C7D8F;
+        }
+
+        .program p {
+            font-size: 16px;
+            margin: 0 20px 20px;
+            color: #6C7D8F;
+        }
+
+        .program:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .programs-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .program {
+                width: 90%;
+                max-width: 600px;
+            }
+
+            #programs h1 {
+                font-size: 36px;
+            }
+
+            #programs p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="programs">
+            <h1>Our Programs</h1>
+            <p>Explore our diverse range of programs designed to enrich the educational experience of our students.</p>
+            <div class="programs-container">
+                <div class="program">
+                    <img src="library.jpg" alt="library">
+                    <h2>Academic Excellence</h2>
+                    <p>Our core academic programs focus on developing critical thinking and problem-solving skills.</p>
+                </div>
+                <div class="program">
+                    <img src="sports.jpg" alt="sports">
+                    <h2>Sports & Athletics</h2>
+                    <p>We offer various sports and athletic programs to promote physical fitness and teamwork.</p>
+                </div>
+                <div class="program">
+                    <img src="art.jpg" alt="art">
+                    <h2>Arts & Culture</h2>
+                    <p>Explore creativity through our arts and culture programs, including visual arts, music, and theater.</p>
+                </div>
+                <div class="program">
+                    <img src="com.jpg" alt="com">
+                    <h2>Community Service</h2>
+                    <p>Engage in community service projects to develop leadership skills and a sense of social responsibility.</p>
+                </div>
+                <div class="program">
+                    <img src="tech.jpg" alt="tech">
+                    <h2>Science & Technology</h2>
+                    <p>Hands-on learning in science and technology prepares students for future innovations and careers.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Saturn Boarding School. All rights reserved.</p>
+    </footer>
+</body>
+</html>
